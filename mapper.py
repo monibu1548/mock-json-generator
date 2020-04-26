@@ -3,8 +3,9 @@ import json
 from format import format
 from variables import variables
 
+formatObject = json.loads(format)
 vars = []
-for var in format.values():
+for var in formatObject.values():
     if var[0] is '#' and var[-1] is '#':
         vars.append(var.replace("#", ""))
 
@@ -19,7 +20,7 @@ for var in vars:
 objs = []
 
 for idx in range(caseCnt):
-    newObj = copy.deepcopy(format)
+    newObj = copy.deepcopy(formatObject)
 
     currentAge = 1
     for var in vars:
