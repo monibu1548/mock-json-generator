@@ -6,13 +6,15 @@
 Object 껍데기를 선언합니다. python의 Object 이며, 변경될 key에는 "#" 을 변수 앞뒤로 붙여줍니다
 ex)
 ``` python
-format = {
+format = """
+{
     "type": "#type#",
     "name": "#name#",
     "age": "#age#",
     "fixed": "fixed", // 변경하지 않을 값은 그대로 넣어둡니다
     "male": "#male#"
 }
+"""
 ```
 
 ## variables.py
